@@ -1,0 +1,21 @@
+{
+  "name": "evs-healthcheck-uptime-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CBIIT/evs-healthcheck-uptime-monitor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CBIIT/evs-healthcheck-uptime-monitor/issues"
+  },
+  "homepage": "https://github.com/CBIIT/evs-healthcheck-uptime-monitor#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  }
+}
