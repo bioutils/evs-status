@@ -23,7 +23,7 @@ Checks EVS Production sites public availability using GitHub Actions to run Play
 ## Current Status of EVS Websites:
 To view the current status of EVS Production websites: 
 
-https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions
+https://github.com/bioutils/evs-status/actions
 
 <br />
 
