@@ -14,7 +14,7 @@
 
 <br />
 
-# evs-healthcheck-uptime-monitor
+# evs-status
 
 Checks EVS Production sites public availability using GitHub Actions to run Playwright tests
 
