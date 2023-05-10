@@ -1,14 +1,20 @@
-[![EVS All Production](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-All-Production.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-All-Production.yml) 
-[![EVS Explore](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-Explore.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-Explore.yml)
-[![EVS REST API](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-REST-API.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/EVS-REST-API.yml)
-[![NCI Term Browser](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCI-Term-Browser.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCI-Term-Browser.yml)
-[![NCIm Browser](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCIm-Browser.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCIm-Browser.yml) 
-[![NCIt Browser](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCIt-Browser.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/NCIt-Browser.yml) 
-[![Term Form](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/Term-Form.yml/badge.svg)](https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions/workflows/Term-Form.yml)
+[![EVS All Production](https://github.com/bioutils/evs-status/actions/workflows/EVS-All-Production.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-All-Production.yml)
+
+[![EVS Explore](https://github.com/bioutils/evs-status/actions/workflows/EVS-Explore.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-Explore.yml)
+
+[![EVS REST API](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml)
+
+[![NCI Term Browser](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml)
+
+[![NCIm Browser](https://github.com/bioutils/evs-status/actions/workflows/NCIm-Browser.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/NCIm-Browser.yml)
+
+[![NCIt Browser](https://github.com/bioutils/evs-status/actions/workflows/NCIt-Browser.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/NCIt-Browser.yml)
+
+[![Term Form](https://github.com/bioutils/evs-status/actions/workflows/Term-Form.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/Term-Form.yml)
 
 <br />
 
-# evs-healthcheck-uptime-monitor
+# evs-status
 
 Checks EVS Production sites public availability using GitHub Actions to run Playwright tests
 
@@ -17,7 +23,7 @@ Checks EVS Production sites public availability using GitHub Actions to run Play
 ## Current Status of EVS Websites:
 To view the current status of EVS Production websites: 
 
-https://github.com/CBIIT/evs-healthcheck-uptime-monitor/actions
+https://github.com/bioutils/evs-status/actions
 
 <br />
 
