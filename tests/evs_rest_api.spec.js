@@ -16,7 +16,7 @@ test('api swagger landing page', async ({ page }) => {
 //go to api and see if the concept C3224 is in the hierarchy
 test('api concept C3224 summary', async ({ request }) => {
       
-      const response = await request.get(`https://api-evsres-stage.nci.nih.gov/api/v1/concept/ncit/C3224?include=summary`);
+      const response = await request.get(`https://api-evsrest-stage.nci.nih.gov/api/v1/concept/ncit/C3224?include=summary`);
  
       expect(response.ok()).toBeTruthy;
 
