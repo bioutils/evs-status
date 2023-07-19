@@ -4,7 +4,7 @@ test.use({ actionTimeout: 30000 })
 
 
 test('has valid http status', async ({ page }) => {
-  const response = await page.goto('https://nciterms.nci.nih.gov/ncitbrowser');
+  const response = await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser');
   
   // Test that the response did not fail
   expect(response.status()).toBeLessThan(400);
@@ -12,7 +12,7 @@ test('has valid http status', async ({ page }) => {
 
 
 test('has no title', async ({ page }) => {
-  await page.goto('https://nciterms.nci.nih.gov/ncitbrowser');
+  await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser');
   
   // Page title is empty
   await expect(page).not.toHaveTitle('');
@@ -21,7 +21,7 @@ test('has no title', async ({ page }) => {
 
 
 test('has valid http status with url parameter', async ({ page }) => {
-  const response = await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  const response = await page.goto('https://nciterm-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
   
   // Test that the response did not fail
   expect(response.status()).toBeLessThan(400);
@@ -29,7 +29,7 @@ test('has valid http status with url parameter', async ({ page }) => {
 
 
 test('has All but NCIm button', async ({ page }) => {
-  await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  await page.goto('https://nciterm-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 
   //test button exists
   await expect(page.locator('img[alt="selectAllButNCIm"]').first()).toHaveText('');
@@ -55,7 +55,7 @@ test('has All but NCIm button', async ({ page }) => {
 
 
 test('has functional clear button', async ({ page }) => {
-  const response = await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  const response = await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 
   //test link label
   await expect(page.locator('[id="searchTerm\\:clear"]')).toHaveText('');
@@ -85,7 +85,7 @@ test('has functional clear button', async ({ page }) => {
 });
 
 test('has sources link', async ({ page }) => {
-  await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 
   //click on Sources link
   const page4Promise = page.waitForEvent('popup');
@@ -98,14 +98,14 @@ test('has sources link', async ({ page }) => {
   await popup.waitForLoadState();
 
   // Expects the URL to show Sources page
-  await expect(popup).toHaveURL(/.*nciterms.nci.nih.gov\/ncitbrowser\/pages\/source_help_info-termbrowser.jsf/);
+  await expect(popup).toHaveURL(/.*nciterms-stage.nci.nih.gov\/ncitbrowser\/pages\/source_help_info-termbrowser.jsf/);
 
 });
 
 
 /* 
 test('test', async ({ page }) => {
-  await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
   await page.getByRole('checkbox', { name: 'NCI Thesaurus (version: 23.03d)' }).uncheck();
   await page.getByRole('checkbox', { name: 'NCI Thesaurus (version: 23.03d)' }).check();
   await page.getByRole('checkbox', { name: 'NCI Metathesaurus (version: 202302)' }).check();
@@ -121,13 +121,13 @@ await page.getByRole('link', { name: 'NCI Thesaurus: National Cancer Institute T
 
 await page.getByRole('link', { name: 'GO: Gene Ontology (Apr2023)' }).click();
 
-//https://nciterms.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=GO&version=Apr2023
+//https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=GO&version=Apr2023
 await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 await page.getByRole('link', { name: 'Terminologies' }).click();
 await page.getByRole('link', { name: 'Value Sets' }).click();
 await page.getByRole('link', { name: 'Mappings' }).click();
-await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/ajax?action=create_src_vs_tree&nav_type=valuesets&mode=0');
-await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/ajax?action=create_src_vs_tree&nav_type=valuesets&mode=0');
+await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 
 // sp
 const page1Promise = page.waitForEvent('popup');
@@ -142,7 +142,7 @@ await page.getByRole('checkbox', { name: 'Nanoparticle Ontology (version: 2011-1
 await page.getByRole('checkbox', { name: 'Physician Data Query (version: 2016_07_31)' }).check(); 
 
 test('test', async ({ page }) => {
-  await page.goto('https://nciterms.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
   await page.locator('[id="searchTerm\\:clear"]').click();
   await page.locator('[id="searchTerm\\:multi_search"]').click();
   await page.getByText('Please select at least one terminology.').click();

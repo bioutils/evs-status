@@ -4,7 +4,7 @@ test.use({ actionTimeout: 60000 })
 
 // test swagger landing page
 test('api swagger landing page', async ({ page }) => {
-  const response = await page.goto('https://api-evsrest.nci.nih.gov/swagger-ui/index.html#/');
+  const response = await page.goto('https://api-evsrest-stage.nci.nih.gov/swagger-ui/index.html#/');
 
   // Test that the response did not fail
   expect(response.status()).toBeLessThan(400);
@@ -16,7 +16,7 @@ test('api swagger landing page', async ({ page }) => {
 //go to api and see if the concept C3224 is in the hierarchy
 test('api concept C3224 summary', async ({ request }) => {
       
-      const response = await request.get(`https://api-evsrest.nci.nih.gov/api/v1/concept/ncit/C3224?include=summary`);
+      const response = await request.get(`https://api-evsres-stage.nci.nih.gov/api/v1/concept/ncit/C3224?include=summary`);
  
       expect(response.ok()).toBeTruthy;
 
@@ -205,7 +205,7 @@ value	"C0025202"
 //'go to api and see if the concept is in the hierarchy'
 test('api ncit metadata properties', async ({ request }) => {
       
-  const response = await request.get(`https://api-evsrest.nci.nih.gov/api/v1/metadata/ncit/properties?include=minimal`);
+  const response = await request.get(`https://api-evsrest-stage.nci.nih.gov/api/v1/metadata/ncit/properties?include=minimal`);
 
   expect(response.ok()).toBeTruthy;
 
@@ -250,7 +250,7 @@ test('api ncit metadata properties', async ({ request }) => {
 //      changed original query from 'Bone Cancer' to 'glioma'
   test('api search for glioma', async ({ request }) => {
       
-    const response = await request.get(`https://api-evsrest.nci.nih.gov/api/v1/concept/ncit/search?fromRecord=0&include=minimal&pageSize=100&term=glioma&type=contains`);
+    const response = await request.get(`https://api-evsrest-stage.nci.nih.gov/api/v1/concept/ncit/search?fromRecord=0&include=minimal&pageSize=100&term=glioma&type=contains`);
   
     expect(response.ok()).toBeTruthy;
   
