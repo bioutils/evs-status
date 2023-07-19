@@ -21,7 +21,7 @@ test('has no title', async ({ page }) => {
 
 
 test('has valid http status with url parameter', async ({ page }) => {
-  const response = await page.goto('https://nciterm-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  const response = await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
   
   // Test that the response did not fail
   expect(response.status()).toBeLessThan(400);
@@ -29,7 +29,7 @@ test('has valid http status with url parameter', async ({ page }) => {
 
 
 test('has All but NCIm button', async ({ page }) => {
-  await page.goto('https://nciterm-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
+  await page.goto('https://nciterms-stage.nci.nih.gov/ncitbrowser/pages/multiple_search.jsf?nav_type=terminologies');
 
   //test button exists
   await expect(page.locator('img[alt="selectAllButNCIm"]').first()).toHaveText('');
