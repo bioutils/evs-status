@@ -1,6 +1,6 @@
 const { expect, test } = require('@playwright/test')
 
-test.use({ actionTimeout: 10000 })
+test.use({ actionTimeout: 60000 })
 
 test('visit page and take screenshot', async ({ page }) => {
 

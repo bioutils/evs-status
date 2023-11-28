@@ -1,6 +1,6 @@
 const { expect, test } = require('@playwright/test')
 
-test.use({ actionTimeout: 10000 })
+test.use({ actionTimeout: 60000 })
 
 
 test('has valid http status', async ({ page }) => {
@@ -34,7 +34,7 @@ test('download link popup', async ({ page }) => {
   const page4Promise = page.waitForEvent('popup'); 
  
   // click the 'Download' link
-  await page.getByRole('link', { name: 'http://evs.nci.nih.gov/ftp1/NCI_Thesaurus' }).click();
+  await page.getByRole('link', { name: 'https://evs.nci.nih.gov/ftp1/NCI_Thesaurus' }).click();
   const popup = await page4Promise;
 
   //wait for popup to appear

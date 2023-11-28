@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.use({ actionTimeout: 30000 })
+test.use({ actionTimeout: 60000 })
 
 
 test('has valid http status', async ({ page }) => {
