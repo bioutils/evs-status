@@ -5,6 +5,9 @@ test.use({ actionTimeout: 60000 })
 
 test('has valid http status', async ({ page }) => {
   const response = await page.goto('https://ncit.nci.nih.gov/ncitbrowser/');
+
+  // set timeout for single test
+  test.setTimeout(120000);
   
   // Test that the response did not fail
   expect(response.status()).toBeLessThan(400);
@@ -13,6 +16,9 @@ test('has valid http status', async ({ page }) => {
 
 test('has no title', async ({ page }) => {
   const response = await page.goto('https://ncit.nci.nih.gov/ncitbrowser/');
+
+  // set timeout for single test
+  test.setTimeout(120000);
   
   // Page title is empty
   await expect(page).not.toHaveTitle('');
@@ -21,6 +27,9 @@ test('has no title', async ({ page }) => {
 
 test('has Welcome text', async ({ page }) => {
   const response = await page.goto('https://ncit.nci.nih.gov/ncitbrowser/');
+
+    // set timeout for single test
+    test.setTimeout(120000);
   
   // Page has 'Welcome' subtitle
   await expect(page.getByText('Welcome')).toBeVisible();
@@ -30,6 +39,9 @@ test('has Welcome text', async ({ page }) => {
 test('download link popup', async ({ page }) => {
   await page.goto('https://ncit.nci.nih.gov/ncitbrowser/');
 
+  // set timeout for single test
+  test.setTimeout(120000);
+  
   // Test for 'Download' link Popup 
   const page4Promise = page.waitForEvent('popup'); 
  
