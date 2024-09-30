@@ -7,13 +7,13 @@ name: PROD - NCI Term Browser
 
 on:
   schedule:
-    # At 6am, 9am, Noon, 3pm, and 6pm, Mon through Fri
-    - cron: "0 6,7,8,9,10,11,12,13,14,15,16,17 * * 1-5"
+    # Every 15 min
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     defaults:
       run:
