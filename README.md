@@ -1,5 +1,3 @@
-[![EVS All Production](https://github.com/bioutils/evs-status/actions/workflows/EVS-All-Production.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-All-Production.yml)
-
 [![EVS Explore](https://github.com/bioutils/evs-status/actions/workflows/EVS-Explore.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-Explore.yml)
 
 [![EVS REST API](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml)
