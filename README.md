@@ -2,7 +2,7 @@
 
 [![EVS REST API](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/EVS-REST-API.yml)
 
-[![PROD - NCI Term Browser](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml/badge.svg?branch=master)](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml)
+[![NCI Term Browser](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml/badge.svg?branch=master)](https://github.com/bioutils/evs-status/actions/workflows/NCI-Term-Browser.yml)
 
 [![NCIm Browser](https://github.com/bioutils/evs-status/actions/workflows/NCIm-Browser.yml/badge.svg)](https://github.com/bioutils/evs-status/actions/workflows/NCIm-Browser.yml)
 
